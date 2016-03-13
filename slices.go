@@ -14,12 +14,15 @@ func main() {
 	fmt.Println("s[2]: ", s[2])
 
 	fmt.Println("len(s):", len(s))
+	fmt.Println("cap(s):", cap(s))
 
 	// slice size not fixed, unlike array
 	// it's no specified length.
 	s = append(s, "d")
 	s = append(s, "e")
 	fmt.Println("after append, s:", s)
+	fmt.Println("len(s):", len(s))
+	fmt.Println("cap(s):", cap(s))
 
 
 	c := make([]string, len(s))
